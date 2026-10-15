@@ -25,6 +25,7 @@ if(BUILD_TESTING)
     DESTINATION lib/${PROJECT_NAME}
   )
   ament_lint_auto_find_test_dependencies()
+  install(DIRECTORY launch rviz DESTINATION share/${PROJECT_NAME})
 endif()
 
 ament_package()
